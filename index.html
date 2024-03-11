@@ -17,6 +17,7 @@
       padding: 20px; /* Adjust padding if needed */
       text-align: center;
       color: #fff; /* Add white text color to contrast with the background image (optional) */
+      height: 300px;
     }
     /* Styles for the banner text */
     .banner h1 {
@@ -26,16 +27,20 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow position and opacity as desired */
     }
     nav {
-      background-color: #f0e6c7; /* Example color, adjust as needed */
+      background-image: url("navbackground.jpg"); /* Replace with your image filename */
+      background-size: cover; /* Stretch the image to cover the entire navigation bar */
+      background-position: center; /* Center the image within the navigation bar */
       text-align: center;
       padding: 10px;
+      color: #000; /* Text color to contrast with the background image */
     }
     nav a {
       text-decoration: none;
       padding: 5px 10px;
-      background-color: #ddd;
-      border-radius: 5px;
-      margin-left: 10px;
+      background-color: #87cfcc;
+      border-radius: 20px;
+      margin-left: 20px;
+      text-shadow: 0px 0px 2px rgba(255,255,255,0.5); /* Slight white shadow */
     }
     .boxes {
       display: flex; /* Arranges boxes horizontally */
@@ -54,6 +59,18 @@
       width: 100%;
       height: 150px; /* Adjust height as needed */
     }
+
+    main {
+      padding: 20px; /* Add padding for spacing */
+      margin: 0 auto; /* Add margin for centering */
+      text-align: center; /* Center the text within the main element (optional) */
+    }
+
+    a {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit text color from parent element */
+    }
+    
   </style>
 </head>
 <body>
@@ -62,13 +79,25 @@
   </header>
 
   <nav>
+    <a href="home.html">Home</a>
+    <a href="tutorials.html">Tutorials</a>
+    <a href="contact.html">Contact</a>
     <a href="about.html">About Us</a>
+    <a href="chatbot.html">Chat with Inky</a>
   </nav>
 
   <main>
     <p>Let's Get Colorful! Face Paint Tutorials & Supplies for Kids</p>
     <p>Welcome to Brushstroke Buddies, your one-stop shop for all things face painting! Explore our vast collection of kid-friendly face paints and stencils to transform faces and spark imaginations. We have everything you need to create fun and colorful designs for parties, birthdays, and more!</p>
     <div class="boxes">
+      <a href="inky.html">
+        <div class="box">
+          <img src="Inky.jpg" alt="Meet Inky">
+          <h3>Meet Inky!</h3>
+          <p>Having a wobbly face painting moment?  Don't worry! Inky, our super cool chatbot pal, is here to help!
+          </p>
+        </div>
+      </a>
       <div class="box">
         <img src="butterly.jpg" alt="Makeup Tutorials">
         <h3>Makeup Tutorials</h3>

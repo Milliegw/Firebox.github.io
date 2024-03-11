@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with Inky - Brushstroke Buddies</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center; /* Center text by default */
+    }
+    
+    .container {
+      display: flex; /* Center content horizontally */
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Set minimum height for viewport */
+      background-image: url("background.jpg"); /* Replace with background image URL */
+      background-repeat: no-repeat; /* Prevent background image tiling */
+      background-size: cover; /* Stretch image to cover the entire area */
+    }
+    
+    .content {
+      background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+      padding: 30px;
+      border-radius: 10px; /* Rounded corners for the content box */
+      max-width: 600px; /* Set a maximum width for the content */
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 1.1em;
+      line-height: 1.5; /* Adjust line spacing for better readability */
+      margin-bottom: 15px;
+    }
+    
+    .button {
+      display: inline-block; /* Display button inline */
+      padding: 10px 20px;
+      background-color: #87cfcc; /* Adjust button background color */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px; /* Rounded corners for the button */
+      cursor: pointer; /* Change cursor to indicate clickability */
+      transition: background-color 0.3s ease; /* Smooth button hover effect */
+    }
+    
+    .button:hover {
+      background-color: #77bdd5; /* Adjust button hover color */
+    }
+
+    .banner {
+        background-image: url("banner-background.jpg"); /* Replace with background image URL */
+        background-size: cover; /* Stretch image to cover the banner area */
+        background-position: center; /* Center the image within the banner */
+        color: #131212; /* Text color for banner content */
+        padding: 20px;
+        text-align: center;
+        }
+
+    .banner a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Inherit text color from parent */
+        font-size: 1.5em; /* Adjust text size (optional) */
+        font-family: Helvetica, sans-serif; /* Helvetica preferred, fallback to sans-serif */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust shadow position and opacity as desired */
+    }
+
+    .chat-box {
+        display: flex; /* Arrange elements horizontally */
+        justify-content: space-between; /* Distribute elements with space */
+        align-items: center; /* Vertically align elements */
+        background-color: #f0f0f0; /* Light grey background */
+        padding: 20px 30px;
+        border-top: 1px solid #ddd; /* Top border to separate from content */
+    }
+
+    #chat-input {
+        width: 80%; /* Adjust width as needed */
+        height: 40px; /* Adjust height as needed */
+        padding: 5px;
+        border: 1px solid #ccc; /* Border for the input field */
+        border-radius: 5px; /* Rounded corners */
+        resize: none; /* Disable resizing of textarea */
+        font-family: inherit; /* Inherit font from parent element */
+        }
+
+    #send-button {
+        background-color: #87cfcc; /* Adjust button background color */
+        color: #fff; /* White text color */
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Change cursor to indicate clickability */
+        transition: background-color 0.3s ease; /* Smooth button hover effect */
+        }
+
+    #send-button:hover {
+        background-color: #77bdd5; /* Adjust button hover color */
+        }
+
+    .chat-icon {
+            width: 40px; /* Adjust width as needed */
+            height: 40px; /* Adjust height as needed */
+            margin-right: 10px; /* Add margin for spacing */
+        }
+
+  </style>
+</head>
+<body>
+    <header class="banner">
+        <a href="index.html">Return to Brushstroke Buddies Home</a>
+    </header>
+  <div class="container">
+    <div class="content">
+      <h1>Let's get creative! ✨</h1>
+      <p>Having a wobbly face painting moment? Don't worry! Inky, our super cool chatbot pal, is here to help!</p>
+      <p>Ask Inky anything about face paint, like what colours to use for
+      </div>
+    </div>
+    <div class="chat-box">
+        <img src="inky.jpg" alt="Chat Icon" class="chat-icon">
+        <textarea id="chat-input" placeholder="Type your message here..."></textarea>
+        <button id="send-button">Send</button>
+    </div>
+</body>
