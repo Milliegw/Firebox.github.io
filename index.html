@@ -11,6 +11,9 @@
       padding: 0;
     }
     .banner {
+      display: flex; /* Enables flexbox layout for the header */
+      justify-content: flex-end; /* Pushes elements to the right side */
+      /* Other styles for the banner */
       background-image: url("background.jpg"); /* Replace with your image filename */
       background-size: cover; /* Stretch the image to cover the entire banner area */
       background-position: center; /* Center the image within the banner */
@@ -70,12 +73,29 @@
       text-decoration: none; /* Remove underline */
       color: inherit; /* Inherit text color from parent element */
     }
+
+    .search-icon img {
+      width: 40; /* Adjust width as needed */
+      height: 40px; /* Adjust height as needed */
+    }
+
+    .search-form {
+      position: absolute; /* Makes the search form positioned absolutely */
+      top: 250px; /* Positions it 20px from the bottom */
+      right: 20px; /* Positions it 20px from the right */
+    }
     
   </style>
 </head>
 <body>
   <header class="banner">
     <h1>Brushstroke Buddies</h1>
+    <form class="search-form">
+      <input type="text" class="search-box" placeholder="Search the website">
+      <button type="submit" class="search-icon">
+        <img src="search.jpg" alt="Search Icon">
+      </button>
+    </form>
   </header>
 
   <nav>
