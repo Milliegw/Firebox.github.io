@@ -16,7 +16,7 @@
       display: flex; /* Center content horizontally */
       justify-content: center;
       align-items: center;
-      min-height: 100vh; /* Set minimum height for viewport */
+      min-height: 80vh; /* Set minimum height for viewport */
       background-image: url("background.jpg"); /* Replace with background image URL */
       background-repeat: no-repeat; /* Prevent background image tiling */
       background-size: cover; /* Stretch image to cover the entire area */
@@ -110,13 +110,26 @@
             height: 40px; /* Adjust height as needed */
             margin-right: 10px; /* Add margin for spacing */
         }
+        .top-nav {
+        background-color: #87cfcc; /* Light blue color */
+        padding: 10px;
+        text-align: center;
+        color: #000; /* Text color to contrast with the background */
+        }
+
+    .top-nav a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        text-shadow: 0px 0px 2px rgba(255,255,255,0.5); /* Slight white shadow */
+        }
 
   </style>
 </head>
 <body>
-    <header class="banner">
-        <a href="index.html">Return to Brushstroke Buddies Home</a>
-    </header>
+    <div class="top-nav">
+      <a href="index.html">Return to Home</a>
+    </div>
   <div class="container">
     <div class="content">
       <h1>Let's get creative! ✨</h1>
